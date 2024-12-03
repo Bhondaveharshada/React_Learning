@@ -17,13 +17,11 @@ function App() {
 //2 * Function calls :-
 //?  Functions ,especially those that returns JSX, can be invoked directly within your jsx
 export const App2 = () => {
-  return (
-    <>
-       <NetflixSeries/>
-    </>
-
-  );
+  return <NetflixSeries/>
 };
+   
+
+ 
 
 const ZoomIntegration = () => {
   const task = "Zoom Integration.";
