@@ -6,7 +6,7 @@ export const NetflixSeries = ()=>{
      <div>
       {seriesData.map((curElem)=>{
           return (
-            <SeriesCards key={curElem.id} curElem ={curElem}/>
+            <SeriesCards key={curElem.id} data ={curElem}/>
           )
       })};
      

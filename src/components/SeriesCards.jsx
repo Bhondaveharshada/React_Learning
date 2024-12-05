@@ -1,17 +1,23 @@
-export const SeriesCards = (props) =>{
-    console.log(props);
+export const SeriesCards = ({data,key}) =>{
+    //console.log(data);
+    /* const {data, key} = props.data */
+    const {img_url, name, rating,description, cast, genre, watch_url} = data
     
     return (
-        <div key= {props.key}>
-
-        <h2>Name : {props.curElem.name}</h2>
-        <h3>Rating: {props.curElem.rating}</h3>
-        <p>Summary: {props.curElem.description}</p>
-        <p>Genre: {props.curElem.genre}</p>
-        <p>Cast: {props.curElem.cast}</p>
-        <a href={props.curElem.watch_url} target='_blank'>
+        <div key= {key}>
+         <div>
+          <img src={img_url} alt=""  width="50%"
+            height="40%" />
+         </div>
+        <h2>Name : {name}</h2>
+        <h3>Rating: {rating}</h3>
+        <p>Summary: {description}</p>
+        <p>Genre: {genre}</p>
+        <p>Cast: {cast}</p>
+        <a href={watch_url} target='_blank' rel="noreferrer">
           <button>Watch Now</button>
         </a>
+        <br />
         <br />
       </div>
       );
