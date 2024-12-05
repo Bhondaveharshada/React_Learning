@@ -8,12 +8,13 @@ export const NetflixSeries = ()=>{
           return (
             <SeriesCards key={curElem.id} data ={curElem}/>
           )
-      })};
-     
+      })} ===following is profile component===
+
      </div>
      
      
+     
     )
-  };
+  }
 
 //export default NetflixSeries;
