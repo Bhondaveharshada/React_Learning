@@ -5,7 +5,7 @@ function App() {
     <div>
       <h1>Hello , I am Harshada Bhondave</h1>
       <h4>Following is the task that I have done.</h4>
-     {/*  <ZoomIntegration /> */}
+      <ZoomIntegration />
     </div>
   );
 }
