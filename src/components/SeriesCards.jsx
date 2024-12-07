@@ -6,8 +6,8 @@ export const SeriesCards = ({data,key}) =>{
     return (
         <div key= {key}>
          <div>
-          <img src={img_url} alt=""  width="50%"
-            height="40%" />
+          <img src={img_url} alt=""  width="45%"
+            height="37%" />
          </div>
         <h2>Name : {name}</h2>
         <h3>Rating: {rating}</h3>

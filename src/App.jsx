@@ -1,5 +1,4 @@
-
-import {NetflixSeries} from "./components/NetflixSeries";
+import { NetflixSeries } from "./components/NetflixSeries";
 
 function App() {
   return (
@@ -17,23 +16,26 @@ function App() {
 //2 * Function calls :-
 //?  Functions ,especially those that returns JSX, can be invoked directly within your jsx
 export const App2 = () => {
-  return <NetflixSeries/>
+  return (
+    <>
+     <section className="container">
+     <NetflixSeries/>
+     </section>
+    </>
+  );
 };
-   
-
- 
 
 const ZoomIntegration = () => {
   const task = "Zoom Integration.";
   const summary =
     "By integrating zoom in our application we can use all the functionallity that zoom provide from our application like scheduling meetings,attend meetings etc";
-  
-  const technologyUsed = () =>{
-    const technology = "Angular(frontend), node.js(backend), mongoDb(database)";
-    return technology 
-  }  
 
-    return (
+  const technologyUsed = () => {
+    const technology = "Angular(frontend), node.js(backend), mongoDb(database)";
+    return technology;
+  };
+
+  return (
     <div>
       <div>
         <div>
@@ -45,7 +47,7 @@ const ZoomIntegration = () => {
           />
         </div>
         <h2>Task: {task}</h2>
-        <h2>rating: {30 /3.2}</h2>
+        <h2>rating: {30 / 3.2}</h2>
         <h3>Using package called zoomMeetingSDK</h3>
         <p>Summary : {summary}</p>
         <p>technology used: {technologyUsed()}</p>
@@ -53,7 +55,5 @@ const ZoomIntegration = () => {
     </div>
   );
 };
-
-
 
 export default App;
