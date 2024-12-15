@@ -43,20 +43,22 @@ export const SeriesCards = ({ data, key }) => {
       <div>
         <img src={img_url} alt="" width="45%" height="37%" />
       </div>
-      <div className={styles['card-content']}>
+      {/* <div className={styles['card-content']}> */}
+        <div className='flex flex-col gap-4 py-[3.2rem] px-[1.2rem]'>
         <h2>Name : {name}</h2>
         <h2>Rating: <span className={`${styles.rating} ${ratingClass}`}>{rating}</span></h2>
-        <p>Summary: {description}</p>
+        <p className="text-3xl font-bold underline text-cyan-6  00">Summary: {description}</p>
         <p>Genre: {genre}</p>
         <p>Cast: {cast}</p>
         <a href={watch_url} target="_blank" rel="noreferrer">
           {/* <button style={btn_style}>Watch Now</button> */}
-          <ButtonWatch >Watch Now</ButtonWatch>
+         {/*  <ButtonWatch >Watch Now</ButtonWatch> */}
           <ButtonWatchTemp rating= {rating}>Watch Nowww</ButtonWatchTemp>
         </a>
         <br />
         <br />
-      </div>
+        </div>
+      {/* </div> */}
     </div>
   );
 };
